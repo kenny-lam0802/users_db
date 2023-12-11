@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='/css/style.css') }}">
+    <title>Create an account</title>
+</head>
+<body>
+    <div class="create_form">
+        <h1 style="color: blue;">Add a new User</h1>
+        <form action="/new/user" method="POST">
+            <div class="create_field">
+                <label for="first_name">First Name:</label>
+                <input type="text" name = "first_name">
+            </div>
+            <div class="create_field">
+                <label for="last_name">Last Name:</label>
+                <input type="text" name="last_name">
+            </div>
+            <div class="create_field">
+                <label for="email">Email:</label>
+                <input type="email" name="email">
+            </div>
+                <input type="submit" value="Create User" class="create_btn">
+        </form>
+        <a href="/">Return to homepage</a>
+    </div>
+</body>
+</html>

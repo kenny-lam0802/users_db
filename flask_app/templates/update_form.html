@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update a User</title>
+</head>
+<body>
+    <div class="update_form">
+        <h1>Add a new User</h1>
+        <form action="/update/user" method="POST">
+            <input type="hidden" name="id" value="{{this_user.id}}">
+            <div>
+                <label for="first_name">First Name:</label>
+                <input type="text" name = "first_name" value="{{this_user.first_name}}">
+            </div>
+            <div>
+                <label for="last_name">Last Name:</label>
+                <input type="text" name="last_name" value="{{this_user.last_name}}">
+            </div>
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" name="email" value="{{this_user.email}}">
+            </div>
+                <input type="submit" value="Create User">
+        </form>
+    </div>
+</body>
+</html>
